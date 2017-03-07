@@ -4,90 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
-    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="slider.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
 </head>
 <body>
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
     <header>
         <div class=logo>
-            <img src="logo.png" alt="logo">
+            <img src="img/logo.png" alt="logo">
+            <div class=social_networks>
+                <img src="img/twitter_other.png" alt="social_networks">
+            </div>
         </div>
-        <div class=social_networks>
-            <img src="twitter_other.png" alt="social_networks">
-        </div>
-        <nav>
-            <ur>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="success.html">Success stories</a></li>
-                <li><a href="news.html">News & articles</a> </li>
-                <li><a href="contact.html">Contact me</a></li>
-            </ur>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="#">Home</a></li>
+                    <li><a href="#success">Success stories</a></li>
+                    <li><a href="#news">News & articles</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="flex-container">
-        <div class="flexslider">
-            <ul class="slides">
-                <li><img src="slides01.png" /></li>
-        		<li><img src="sliders02.png" /></li>
-        		<li><img src="slider_3.png" /></li>
-        	</ul>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/sliders01.png" alt="Slides01">
+            </div>
+            <div class="item">
+                <img src="img/sliders02.png" alt="Slides02">
+            </div>
+            <div class="item">
+                <img src="img/sliders03.png" alt="Slides03">
+            </div>
         </div>
-    </div>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div> 
     <main>
         <section id="wel">    
             <div class="text_wel">
                 <h2>Welcome!</h2>
                 <p>Welcome! I am a Certified Health Coach, focused on women's health, bringing you super-practical support to help you feel great, take care of your body, and actually enjoy the process. I don’t tell my clients what to do, I teach them what to do.  A fresh & fun approach to your life  health and happiness in your life.</p>
             </div>
-                <img src="welcome.png" alt="Welcome">
-            <div>
+            <img src="img/welcome.png" alt="Welcome">
             <div class="anagraph">
                 <h2>Are you ready to harness the power of vibrant health to fuel  your extraordinary life?</h2>
                 <p>I'm a health and lifestyle coach to smart (and busy!) women who want to look and feel their best, but who don't have a ton of time to exercise, shop for speciality foods, or cook tons of meals every week. I stumbled upon this path by accident, and it changed my life. Learn what good health can do and how extraordinary your life can be!</p>
-                    <div class="nutrition">
-                        <img src="cup.png" alt="cup">
-                        <h2 style="color:#A6C550;">Nutrition Strategy</h2>
-                        <p>Get a simple, doable tweak to your habits, that will make you a healthy, vibrant version of yourself.</p>
-                    </div>
-                    <div class="exercise">
-                        <img src="ball.png" alt="ball">
-                        <h2 style="color:#A6C550;">Exercise Program</h2>
-                        <p>Get your individual exercise program that will meet your special needs considering your final goal.</p>
-                    </div>
-                    <div class="routine">
-                        <img src="time.png" alt="time">
-                        <h2>Routine Program</h2>
-                        <p>Our program is distinct in that it adopts a holistic approach to health coaching based on your schedule.</p>
-                    </div>
+                <div class="nutrition">
+                    <img src="img/cup.png" alt="cup">
+                    <h2>Nutrition Strategy</h2>
+                    <p>Get a simple, doable tweak to your habits, that will make you a healthy, vibrant version of yourself.</p>
+                </div>
+                <div class="exercise">
+                    <img src="img/ball.png" alt="ball">
+                    <h2>Exercise Program</h2>
+                    <p>Get your individual exercise program that will meet your special needs considering your final goal.</p>
+                </div>
+                <div class="routine">
+                    <img src="img/time.png" alt="time">
+                    <h2>Routine Program</h2>
+                    <p>Our program is distinct in that it adopts a holistic approach to health coaching based on your schedule.</p>
+                </div>
             </div>
         </section>
         <section id="success">
             <div class="stories">
-               <h2>Success stories</h2> 
-               <div>
-                   <img src="success_stories01.png" alt="success">
-                   <img src="success_stories02.png" alt="success">
-               </div>
-               <p>I believe that taking a conscious approach to eating is crucial in today's crazy food world. Becoming what I call a Conscious Eater begins with a change in mindset. Eating consciously simply means to eat with awareness, knowing what we are eating, why we are eating it, where it comes from and how it will make us feel.<br>
-               Eating consciously allows us to establish the right balance of healthy to unhealthy food, and flexibility to adapt, both crucial to maintain our sanity. Overtime, it creates a deeper understanding of one's body, where eating becomes intuitive and we eat according to our body's needs. </p>
+                <h2>Success stories</h2> 
+                <div>
+                   <img src="img/success_stories01.png" alt="success">
+                   <img src="img/success_stories02.png" alt="success">
+                </div>
+                <p>I believe that taking a conscious approach to eating is crucial in today's crazy food world. Becoming what I call a Conscious Eater begins with a change in mindset. Eating consciously simply means to eat with awareness, knowing what we are eating, why we are eating it, where it comes from and how it will make us feel.<br>
+                       Eating consciously allows us to establish the right balance of healthy to unhealthy food, and flexibility to adapt, both crucial to maintain our sanity. Overtime, it creates a deeper understanding of one's body, where eating becomes intuitive and we eat according to our body's needs. </p>
             </div>
         </section>
-        <section id="">
+        <section id="news">
             <div>
                 <h2>News & articles</h2>
                 <div>
-                    <img src="news1.png" alt="news1">
-                    <img src="news2.png" alt="news1">
-                    <img src="news3.png" alt="news1">
+                    <img src="img/news1.png" alt="news1">
+                    <img src="img/news2.png" alt="news1">
+                    <img src="img/news3.png" alt="news1">
                 </div>
             </div>
+        </section>
+        <section id="contact">
+                    FORMA
         </section>
         <footer>
             <div>
@@ -98,5 +115,13 @@
             </div>
         </footer>
     </main>
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

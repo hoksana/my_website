@@ -1,0 +1,16 @@
+#myCarousel img {
+    width: 100%;
+    height: 368px;
+    margin: 0 auto;
+}
+
+#myCarousel {
+    padding-top: 150px;
+    
+}
+.carousel-indicators{
+    margin-top: 100px;
+}
+.carousel-indicators .active {
+    background: #A6C550;
+}
