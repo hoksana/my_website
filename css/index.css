@@ -7,33 +7,38 @@ body {
 }
 header{
     margin: 0 auto;
-    width: 100%;
+    width: 1200px;
     background: #ffffff;
     z-index: 1;
     position: fixed;
 }
 .logo{
-    width: 400;
-    height: 100px;
-    margin: 0px 40px 0px 20px;
+    height: 70px;
+    background: #ffffff;
+    margin: 10px 40px 0px 20px;
 }
 .social_networks{
     margin: -50px 0px 20px 200px;
 }
-
-.collapse {
-    background:#ffffff;
+.social_networks img{
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
 }
+ 
+
 .navbar-default .navbar-nav > ul {
     width:100%;
+    background: none; 
+    border: none;
 }
 
 
 .navbar-default .navbar-nav > li {
     display: inline;
-    color: #A6C550;
     font-family:"Open Sans",Helvetica,Arial,sans-serif;
     font-size: 1.4em;
+    border: none;
     margin: 0px 0px 0px 100px;
 }
 .navbar-default .navbar-nav > li > a {
@@ -45,12 +50,18 @@ header{
 color: #A6C550;
 }
 
+
+
+
+
+
 #wel{
     margin: 40px 0px 0px 0px;
 }
 .blox{
     width: 100%;
     padding: 15px;
+    margin-bottom: 30px;
 }
 .text_wel{
     width:50%;
@@ -156,15 +167,83 @@ color: #A6C550;
 }
 .contact_form{
     width: 400px;
-    background:red;
     margin: 0 auto;
+}
+.contact_text h2{
+    padding: 0px 0px 40px 0px;
+}
+
+input[type=text]:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #A6C550;
+}
+input[type=email]:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #A6C550;
+}
+input[type=tel]:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #A6C550;
+}
+input[type=textarea]:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #A6C550;
+}
+
+#client-first{
+    margin: 0px 0px 10px 0px;
+    
+}
+#client-last{
+    margin: 0px 0px 10px 10px;
+}
+#client-email{
+    margin: 0px 0px 10px 0px;
+}
+#client-phone{
+    margin: 0px 0px 10px 10px;
 }
 #message{
    width: 400px;
    padding: 5px;
+   margin-bottom: 20px;
 }
-
-
-footer{
+#btn-submit{
+    float: right;
     background:#A6C550;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50px;
+}
+footer{
+    margin-top: 100px;
+    background:#A6C550;
+    padding: 40px;
+}
+.info{
+    width: 400px;
+    color: #ffffff;
+    float: left;
+}
+.map{
+    width:700px;
+    height:300px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+#gmap_canvas img{
+    max-width:none!important;
+    background:none!important;
+}
+.socials{
+   margin-top: 55px;
+}
+.socials img{
+   width:70px;
+   height:70px; 
+   margin-right: 15px;
 }
