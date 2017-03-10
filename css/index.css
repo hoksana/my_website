@@ -239,6 +239,10 @@ footer{
     max-width:none!important;
     background:none!important;
 }
+#gmap_canvas{
+    width:700px;
+    height:440px;
+} 
 .socials{
    margin-top: 55px;
 }
