@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .blox{
+    margin: 0 auto;
+    height: auto;
+  }
+  .text_wel{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .nutrition{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .exercise{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .routine{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .success_text{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .imege{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .success_remark{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .success_remark p{
+    width: 80%;
+    float: right;
+  }
+  .news_imege{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .contact_text p{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .socials{
+    margin-bottom: 60px;
+  }
+  .map{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  
+}
